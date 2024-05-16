@@ -7,12 +7,9 @@ public class ContextoDataBase : DbContext
 {
     public ContextoDataBase()
     {
-        //Database.EnsureCreated();
+        Database.EnsureCreated();
     }
-    public ContextoDataBase(DbContextOptions<ContextoDataBase> options) : base(options)
-    {
-        
-    }
+   
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
